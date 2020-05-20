@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "practice/practice_packg/city_imp.proto";
+
+package my.street;
+
+ message Street {
+    string street_name = 1;
+    my.city.City city = 2;
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+//Lattitude and longitude
+message LatLong {
+    double latitude = 1;
+
+    double longitude = 2;
+}

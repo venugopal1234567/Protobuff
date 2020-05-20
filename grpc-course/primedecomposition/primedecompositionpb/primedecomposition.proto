@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package primedecomposition;
+option go_package="primedecompositionpb";
+
+message PrimeDecompose { 
+    int32 num = 1;
+}
+
+message PrimeDecomposeManyTimesRequest {
+    PrimeDecompose primedecompose = 1;
+}
+
+message PrimeDecomposeManyTimesResponse {
+    int32 result = 1;
+}
+
+service PrimeDecomposeService {
+    rpc PrimeDecomposeManyTimes(PrimeDecomposeManyTimesRequest) returns (stream PrimeDecomposeManyTimesResponse){};
+}

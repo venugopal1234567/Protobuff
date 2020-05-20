@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "practice/practice_packg/street_imp.proto";
+
+package my.building;
+
+message Building {
+    string building_name = 1;
+    int32 building_number = 2;
+    my.street.Street street = 3;
+}

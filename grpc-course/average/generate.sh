@@ -1,0 +1,1 @@
+protoc averagepb/average.proto --go_out=plugins=grpc:.

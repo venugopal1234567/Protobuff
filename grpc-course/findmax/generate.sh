@@ -1,0 +1,1 @@
+protoc findmaxpb/findmax.proto --go_out=plugins=grpc:.

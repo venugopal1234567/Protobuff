@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package my.date;
+
+message Date {
+    // year must be 1 to 9999
+    int32 year = 1;
+
+    //Month must be 1 to 12
+    int32 month = 2;
+
+    //Day must be 1 to 31 for valid year
+    int32 day = 3;
+}

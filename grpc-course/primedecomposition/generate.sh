@@ -1,0 +1,1 @@
+protoc primedecompositionpb/primedecompositionpb.proto --go_out=plugins=grpc:.

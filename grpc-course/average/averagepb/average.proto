@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package average;
+option go_package="averagepb";
+
+message Average {
+    int64 number = 1;
+}
+
+
+message AverageRequest {
+    Average average = 1;
+}
+
+message AverageResponse{
+    int64 result = 1;
+}
+
+service AverageService {
+  rpc Average(stream AverageRequest) returns (AverageResponse){};
+}
